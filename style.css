@@ -1,0 +1,149 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: lightpink;
+
+    height: 100vh;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#decide{
+    height: 15vh;
+    width: 30vw;
+
+    font-size: 30px;
+    color: white;
+
+    border-radius: 10px;
+    background-color: lightskyblue;
+}
+
+#decide:hover, #addMore:hover{
+    cursor: pointer;
+    background-color: white;
+    color: lightskyblue;
+}
+
+#decision{
+    height: 30vh;
+    width: 50vw;
+    font-size: 80px;
+    text-shadow: 2px 2px lightskyblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+}
+
+#startWindow{
+    background-color: lightskyblue;
+
+    width: 70vw;
+    height: 60vh;
+    border-radius: 10px;
+    border: 1px solid black;
+
+    position: absolute;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#goOn{
+    display: flex;
+}
+
+#done, #startOver{
+    height: 10vh;
+    width: 20vw;
+
+    font-size: 30px;
+
+    border-radius: 10px;
+    background-color: lightpink;
+
+    margin-top: 30px;
+}
+
+#decisionBox > input{
+    width: 80%;
+    background-color: white;
+    border: 1px solid black;
+
+    font-size: 20px;
+}
+
+#decisionBox > button{
+    font-size: 18px;
+
+    border-radius: 7px;
+    background-color: lightpink;
+    width: 180px;
+}
+
+#decisionBox{
+    display: flex;
+}
+
+#addMore{
+    background-color: lightskyblue;
+    border-radius: 10px;
+
+    height: 10vh;
+    width: 20vw;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+#hasBeenAdded{
+    margin-bottom: 10px;
+
+    position: absolute;
+    margin-bottom: 30vh;
+    animation-name: optionAdded;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+
+}
+
+@keyframes optionAdded{
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;
+}
+}
+
+#decisionBox > input:hover{
+    cursor: text;
+}
+
+#submit:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#goOn > .knappar:hover{
+    cursor:pointer;
+    color: white;
+}
+
+h1{
+    position: absolute;
+    margin-bottom: 75vh;
+    font-size: 75px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
